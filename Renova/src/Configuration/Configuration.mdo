@@ -68,6 +68,11 @@
   <reports>Report.АнализРемонтов</reports>
   <reports>Report.Отчет</reports>
   <reports>Report.АнализРемонтовОбщий</reports>
+  <reports>Report.ИтогиПоВидамЗаводскойПродукции</reports>
+  <reports>Report.ИтогиПоВидамПродукции</reports>
+  <reports>Report.ИтогиПоГруппамМоделей</reports>
+  <reports>Report.ИтогиПоСрокуСлужбы</reports>
+  <reports>Report.ИтогиПоГруппамМоделейИКодовНеисправности</reports>
   <dataProcessors>DataProcessor.ЗагрузкаВидовПродукции</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаОтчетОРемонтах</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаРемонт</dataProcessors>

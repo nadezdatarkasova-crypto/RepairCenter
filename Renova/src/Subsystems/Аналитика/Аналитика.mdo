@@ -13,5 +13,9 @@
   <content>AccumulationRegister.РемонтыИПродукция</content>
   <content>AccumulationRegister.КонтрагентыИДата</content>
   <content>AccumulationRegister.ФабрикиИСмены</content>
-  <content>Report.АнализРемонтовОбщий</content>
+  <content>Report.ИтогиПоВидамЗаводскойПродукции</content>
+  <content>Report.ИтогиПоВидамПродукции</content>
+  <content>Report.ИтогиПоГруппамМоделей</content>
+  <content>Report.ИтогиПоСрокуСлужбы</content>
+  <content>Report.ИтогиПоГруппамМоделейИКодовНеисправности</content>
 </mdclass:Subsystem>

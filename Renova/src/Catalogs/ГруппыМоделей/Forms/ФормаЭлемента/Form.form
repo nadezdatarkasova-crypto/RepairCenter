@@ -231,10 +231,6 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.МодельПродукции.Модель</segments>
       </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>МодельПродукцииМодельПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>МодельПродукцииМодельРасширеннаяПодсказка</name>
         <id>28</id>
