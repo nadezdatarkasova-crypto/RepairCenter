@@ -16,6 +16,7 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
+  <defaultReportForm>CommonForm.ФормаОтчета</defaultReportForm>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -44,13 +45,20 @@
   <subsystems>Subsystem.Документы</subsystems>
   <subsystems>Subsystem.ПервичнаяЗагрузкаДанных</subsystems>
   <subsystems>Subsystem.Аналитика</subsystems>
+  <subsystems>Subsystem.Отчеты</subsystems>
   <styles>Style.СтильСиний</styles>
+  <sessionParameters>SessionParameter.АдресНастроек</sessionParameters>
   <commonModules>CommonModule.РаботаСCSVСервер</commonModules>
   <commonModules>CommonModule.СоответсвияСервер</commonModules>
   <commonModules>CommonModule.РаботаСоСтрокойСервер</commonModules>
   <commonModules>CommonModule.РаботаСФайломКлиент</commonModules>
   <commonModules>CommonModule.РаботаСФормамиСервер</commonModules>
+  <commonModules>CommonModule.РаботаСДиаграммами</commonModules>
+  <commonModules>CommonModule.ИсточникДанныхСКД</commonModules>
+  <commonModules>CommonModule.КомпоновщикСКД</commonModules>
   <definedTypes>DefinedType.Сумма</definedTypes>
+  <commonForms>CommonForm.ФормаВыбораОтчета</commonForms>
+  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.РегионыСервиса</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.КонтактыКонтрагентов</catalogs>
@@ -68,6 +76,12 @@
   <reports>Report.АнализРемонтов</reports>
   <reports>Report.Отчет</reports>
   <reports>Report.АнализРемонтовОбщий</reports>
+  <reports>Report.ИтогиПоВидамПродукции</reports>
+  <reports>Report.ИтогиПоВидамПродукцииПоСрокуСлужбы</reports>
+  <reports>Report.ИтогиПоВидамЗаводскойПродукции</reports>
+  <reports>Report.ИтогиПоГруппамМоделей</reports>
+  <reports>Report.ИтогиПоГруппамМоделейПоСрокуСлужбы</reports>
+  <reports>Report.ИтогиПоГруппамМоделейИКодовНеисправности</reports>
   <dataProcessors>DataProcessor.ЗагрузкаВидовПродукции</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаОтчетОРемонтах</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаРемонт</dataProcessors>
@@ -76,6 +90,7 @@
   <dataProcessors>DataProcessor.ЗагрузкаРегионовСервиса</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаКонтактовКонтрагентов</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаСервисныхЦентров</dataProcessors>
+  <dataProcessors>DataProcessor.ОтчетыСЦ</dataProcessors>
   <accumulationRegisters>AccumulationRegister.РемонтыИПродукция</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.КонтрагентыИДата</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ФабрикиИСмены</accumulationRegisters>

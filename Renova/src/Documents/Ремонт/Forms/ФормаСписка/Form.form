@@ -219,10 +219,6 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:LabelFieldExtInfo">
-        <handlers>
-          <event>Click</event>
-          <name>ОтчетНажатие</name>
-        </handlers>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
       </extInfo>
@@ -367,42 +363,6 @@
       <extInfo xsi:type="form:LabelFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <height>1</height>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>КодНеисправности</name>
-      <id>40</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Список.КодНеисправности</segments>
-      </dataPath>
-      <extendedTooltip>
-        <name>КодНеисправностиРасширеннаяПодсказка</name>
-        <id>42</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>КодНеисправностиКонтекстноеМеню</name>
-        <id>41</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>LabelField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -585,6 +545,10 @@
   <showCloseButton>true</showCloseButton>
   <attributes>
     <name>Список</name>
+    <title>
+      <key>ru</key>
+      <value>Список</value>
+    </title>
     <id>1</id>
     <valueType>
       <types>DynamicList</types>
@@ -756,10 +720,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>КодОтчета</dataPath>
         <field>КодОтчета</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>МоментВремени</dataPath>
-        <field>МоментВремени</field>
       </fields>
     </extInfo>
   </attributes>
