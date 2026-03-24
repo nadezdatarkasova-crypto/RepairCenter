@@ -125,7 +125,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Фирма</segments>
+        <segments>Объект.Фабрика</segments>
       </dataPath>
       <extendedTooltip>
         <name>ФирмаРасширеннаяПодсказка</name>
@@ -688,7 +688,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.ОтчетОПродажах</types>
+      <types>DocumentObject.ОтчетОПроизводстве</types>
     </valueType>
     <view>
       <common>true</common>
