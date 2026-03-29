@@ -16,4 +16,5 @@
   <content>DataProcessor.ЗагрузкаДокументаРемонт</content>
   <content>DataProcessor.ЗагрузкаМоделейПродукции</content>
   <content>Subsystem.Администрирование.Subsystem.ПервичнаяЗагрузка</content>
+  <content>Report.ПровекаЗаполненияКодовНомеклатуры</content>
 </mdclass:FunctionalOption>
