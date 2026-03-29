@@ -115,7 +115,6 @@
     <key>ru</key>
     <value>Группа моделей</value>
   </objectPresentation>
-  <hierarchical>true</hierarchical>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <owners>Catalog.ВидыПродукции</owners>
@@ -130,7 +129,6 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ГруппыМоделей.Form.ФормаЭлемента</defaultObjectForm>
-  <defaultFolderForm>Catalog.ГруппыМоделей.Form.ФормаГруппы</defaultFolderForm>
   <defaultListForm>Catalog.ГруппыМоделей.Form.ФормаСписка</defaultListForm>
   <attributes uuid="babe8159-d144-46e3-ac50-e1c5be33b630">
     <name>ВидПродукции</name>
@@ -144,6 +142,24 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="970be22f-cbb0-4729-b841-8dc0c361cd18">
+    <name>СписокМоделейСтрокой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список моделей строкой</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -194,15 +210,6 @@
     <synonym>
       <key>ru</key>
       <value>Форма элемента</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="56a5e920-9b49-4524-8761-4e8ab4e388b5">
-    <name>ФормаГруппы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма группы</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
