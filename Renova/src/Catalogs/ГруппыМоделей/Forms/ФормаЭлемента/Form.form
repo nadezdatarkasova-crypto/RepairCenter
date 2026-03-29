@@ -223,6 +223,10 @@
       <autoFill>true</autoFill>
     </autoCommandBar>
     <handlers>
+      <event>BeforeEditEnd</event>
+      <name>МодельПродукцииПередОкончаниемРедактирования</name>
+    </handlers>
+    <handlers>
       <event>OnChange</event>
       <name>МодельПродукцииПриИзменении</name>
     </handlers>
