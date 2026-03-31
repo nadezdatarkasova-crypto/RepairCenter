@@ -9,5 +9,6 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>CommonForm.Настройки</content>
   <content>CommonCommand.ОткрытьНастройки</content>
+  <content>Report.ПровекаЗаполненияКодовНоменклатуры</content>
   <subsystems>ПервичнаяЗагрузка</subsystems>
 </mdclass:Subsystem>

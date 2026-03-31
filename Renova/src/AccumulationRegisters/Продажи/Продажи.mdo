@@ -33,22 +33,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <resources uuid="b8fe6203-272a-4b5d-a654-5c3544e1a097">
-    <name>КоличествоПроизведено</name>
-    <synonym>
-      <key>ru</key>
-      <value>Количество произведено</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </resources>
   <dimensions uuid="ca17c2be-f4ec-46ea-bde8-0e0deb4be7fe">
     <name>ВидПродукции</name>
     <synonym>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea9f9bf9-059e-46c9-9e50-4ff254f4f1d6">
+  <producedTypes>
+    <objectType typeId="03efff09-71b6-402c-b56c-011ef33644b2" valueTypeId="2193d8b0-3a13-4092-b51f-23b9732b1bc4"/>
+    <managerType typeId="6411cc54-84a1-42be-a0ad-adc6fb5ce2a6" valueTypeId="df5f771f-ddb3-478c-b170-60adb27622b9"/>
+  </producedTypes>
+  <name>ПровекаЗаполненияКодовНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Провека заполнения кодов номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПровекаЗаполненияКодовНоменклатуры.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="d70f6176-770b-48df-be20-3acd2b16e656">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
