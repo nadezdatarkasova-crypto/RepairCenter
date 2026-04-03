@@ -14,6 +14,9 @@
   <content>Document.ОтчетОРемонтах</content>
   <content>Style.СтильСиний</content>
   <content>Document.АктНРП</content>
-  <content>Document.ОтчетОПродажах</content>
-  <content>Document.ОтчетОПроизводстве</content>
+  <content>Document.ОтчетОПродажахИПроизводстве</content>
+  <content>CommonCommand.СоздатьОтчетОПродажам</content>
+  <content>CommonCommand.СоздатьОтчетОПроизводстве</content>
+  <content>CommonCommand.ОткрытьСписокОтчетовОПродажах</content>
+  <content>CommonCommand.ОткрытьСписокОтчетовОПроизводстве</content>
 </mdclass:Subsystem>

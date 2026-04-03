@@ -61,6 +61,10 @@
   <functionalOptions>FunctionalOption.ПервоначальнаяЗагрузка</functionalOptions>
   <definedTypes>DefinedType.Сумма</definedTypes>
   <commonCommands>CommonCommand.ОткрытьНастройки</commonCommands>
+  <commonCommands>CommonCommand.СоздатьОтчетОПродажам</commonCommands>
+  <commonCommands>CommonCommand.СоздатьОтчетОПроизводстве</commonCommands>
+  <commonCommands>CommonCommand.ОткрытьСписокОтчетовОПродажах</commonCommands>
+  <commonCommands>CommonCommand.ОткрытьСписокОтчетовОПроизводстве</commonCommands>
   <constants>Constant.ПервоначальнаяЗагрузка</constants>
   <commonForms>CommonForm.Настройки</commonForms>
   <commonForms>CommonForm.ФормаВыбораОтчета</commonForms>
@@ -78,13 +82,13 @@
   <documents>Document.Ремонт</documents>
   <documents>Document.ОтчетОРемонтах</documents>
   <documents>Document.АктНРП</documents>
-  <documents>Document.ОтчетОПродажах</documents>
-  <documents>Document.ОтчетОПроизводстве</documents>
+  <documents>Document.ОтчетОПродажахИПроизводстве</documents>
   <enums>Enum.СтатусыОтчета</enums>
   <enums>Enum.ВидРемонта</enums>
   <enums>Enum.ВидКлиента</enums>
   <enums>Enum.КатегорииНоменклатуры</enums>
   <enums>Enum.ВидМестонахожденияНРП</enums>
+  <enums>Enum.ВидДокументаПродажиИПроизводство</enums>
   <reports>Report.АнализРемонтов</reports>
   <reports>Report.Отчет</reports>
   <reports>Report.АнализРемонтовОбщий</reports>

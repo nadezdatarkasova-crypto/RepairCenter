@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46672ca4-8a52-4017-a5f9-d411129f03fe">
+  <producedTypes>
+    <refType typeId="c4acaedf-fb89-4ecb-9968-0f12cbc0c3ef" valueTypeId="f8174c21-e363-47e2-afc9-0ef23eafd67f"/>
+    <listType typeId="85750e03-b53f-4007-91f0-8df59275cf62" valueTypeId="e80bfec2-8e3b-4cd8-b353-ebfa188db96b"/>
+    <managerType typeId="18948497-39c4-463e-ad36-83e5e03ffa7b" valueTypeId="3a8a2b85-06a6-4056-a8be-8ed59e83f521"/>
+  </producedTypes>
+  <name>ВидДокументаПродажиИПроизводство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид документа продажи и производство</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fa46c2a0-f29b-4ddd-919f-ca98325308a4">
+    <name>Продажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="412c53d4-6210-4584-b03e-2ff3dfa87ca3">
+    <name>Производство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производство</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -18,10 +18,10 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSplitting>true</enableTotalsSplitting>
   <resources uuid="4989470a-e519-4446-9d25-94daedea49f8">
-    <name>КоличествоПродано</name>
+    <name>Количество</name>
     <synonym>
       <key>ru</key>
-      <value>Количество продано</value>
+      <value>Количество</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -77,10 +77,10 @@
     <useInTotals>true</useInTotals>
   </dimensions>
   <dimensions uuid="d8b76bad-ac47-4e46-a6bc-771d159146d8">
-    <name>МесяцПродаж</name>
+    <name>МесяцУчета</name>
     <synonym>
       <key>ru</key>
-      <value>Месяц продаж</value>
+      <value>Месяц учета</value>
     </synonym>
     <type>
       <types>Date</types>

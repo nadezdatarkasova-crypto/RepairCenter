@@ -2,16 +2,8 @@
 <cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
   <commandsVisibility>
     <visibilityFragments>
-      <command>Document.ОтчетОПродажах.StandardCommand.Create</command>
-      <visible>
-        <common>true</common>
-      </visible>
-    </visibilityFragments>
-    <visibilityFragments>
-      <command>Document.ОтчетОПроизводстве.StandardCommand.Create</command>
-      <visible>
-        <common>true</common>
-      </visible>
+      <command>Document.ОтчетОПродажахИПроизводстве.StandardCommand.OpenList</command>
+      <visible/>
     </visibilityFragments>
   </commandsVisibility>
   <commandsOrder>
@@ -20,8 +12,9 @@
       <commands>Document.АктНРП.StandardCommand.OpenList</commands>
       <commands>Document.ОтчетОРемонтах.StandardCommand.OpenList</commands>
       <commands>Document.Ремонт.StandardCommand.OpenList</commands>
-      <commands>Document.ОтчетОПродажах.StandardCommand.OpenList</commands>
-      <commands>Document.ОтчетОПроизводстве.StandardCommand.OpenList</commands>
+      <commands>Document.ОтчетОПродажахИПроизводстве.StandardCommand.OpenList</commands>
+      <commands>CommonCommand.ОткрытьСписокОтчетовОПродажах</commands>
+      <commands>CommonCommand.ОткрытьСписокОтчетовОПроизводстве</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

@@ -125,7 +125,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Фабрика</segments>
+        <segments>Объект.Фирма</segments>
       </dataPath>
       <extendedTooltip>
         <name>ФирмаРасширеннаяПодсказка</name>
@@ -140,6 +140,46 @@
       <contextMenu>
         <name>ФирмаКонтекстноеМеню</name>
         <id>102</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Фабрика</name>
+      <id>109</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Фабрика</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ФабрикаРасширеннаяПодсказка</name>
+        <id>111</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ФабрикаКонтекстноеМеню</name>
+        <id>110</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -641,7 +681,7 @@
     <id>-1</id>
     <items xsi:type="form:Button">
       <name>ФормаЗагрузитьДанные</name>
-      <id>104</id>
+      <id>105</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -649,7 +689,7 @@
       </userVisible>
       <extendedTooltip>
         <name>ФормаЗагрузитьДанныеРасширеннаяПодсказка</name>
-        <id>105</id>
+        <id>108</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -675,8 +715,11 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
+  <handlers>
+    <event>FillCheckProcessingAtServer</event>
+    <name>ОбработкаПроверкиЗаполненияНаСервере</name>
+  </handlers>
   <saveWindowSettings>true</saveWindowSettings>
-  <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
@@ -688,7 +731,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.ОтчетОПроизводстве</types>
+      <types>DocumentObject.ОтчетОПродажахИПроизводстве</types>
     </valueType>
     <view>
       <common>true</common>
@@ -861,6 +904,10 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers>
+      <event>AfterWrite</event>
+      <name>ПослеЗаписи</name>
+    </handlers>
     <handlers>
       <event>OnReadAtServer</event>
       <name>ПриЧтенииНаСервере</name>
