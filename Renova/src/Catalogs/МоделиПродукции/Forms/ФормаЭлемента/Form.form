@@ -70,15 +70,20 @@
         <id>14</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>LabelField</type>
-      <readOnly>true</readOnly>
+      <type>InputField</type>
+      <groupHorizontalAlign>Right</groupHorizontalAlign>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -130,6 +135,7 @@
       <key>ru</key>
       <value>Группа коды</value>
     </toolTip>
+    <horizontalStretch>true</horizontalStretch>
     <extendedTooltip>
       <name>ГруппаКодыРасширеннаяПодсказка</name>
       <id>29</id>
@@ -194,6 +200,10 @@
   <items xsi:type="form:FormField">
     <name>КатегорииНоменклатуры</name>
     <id>16</id>
+    <title>
+      <key>ru</key>
+      <value>Категория номенклатуры</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -234,11 +244,12 @@
   </items>
   <items xsi:type="form:FormField">
     <name>Родитель</name>
-    <id>10</id>
+    <id>30</id>
     <title>
       <key>ru</key>
-      <value>Группа неисправности</value>
+      <value>Группа номенклатуры</value>
     </title>
+    <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
@@ -248,7 +259,7 @@
     </dataPath>
     <extendedTooltip>
       <name>РодительРасширеннаяПодсказка</name>
-      <id>12</id>
+      <id>32</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -258,11 +269,11 @@
     </extendedTooltip>
     <contextMenu>
       <name>РодительКонтекстноеМеню</name>
-      <id>11</id>
+      <id>31</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>

@@ -70,15 +70,20 @@
         <id>11</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>LabelField</type>
-      <readOnly>true</readOnly>
+      <type>InputField</type>
+      <groupHorizontalAlign>Right</groupHorizontalAlign>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <visible>true</visible>
@@ -94,6 +99,7 @@
       <key>ru</key>
       <value>Группа коды</value>
     </toolTip>
+    <horizontalStretch>true</horizontalStretch>
     <extendedTooltip>
       <name>ГруппаКодыРасширеннаяПодсказка</name>
       <id>14</id>
