@@ -58,6 +58,7 @@
   <commonModules>CommonModule.РаботаСДиаграммамиКлиентСервер</commonModules>
   <commonModules>CommonModule.ИсточникДанныхСКД</commonModules>
   <commonModules>CommonModule.КомпоновщикСКД</commonModules>
+  <commonModules>CommonModule.РаботаСоСпискамиИТаблицамиКлиент</commonModules>
   <functionalOptions>FunctionalOption.ПервоначальнаяЗагрузка</functionalOptions>
   <definedTypes>DefinedType.Сумма</definedTypes>
   <commonCommands>CommonCommand.ОткрытьНастройки</commonCommands>
