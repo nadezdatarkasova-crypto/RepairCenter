@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fddb702-dbe6-4dd5-9de0-f5defd832492">
+  <producedTypes>
+    <objectType typeId="5cfc7adc-b16d-4e7d-877c-8fb7c7457646" valueTypeId="afdde050-e240-4277-9e42-36bf4105c4fc"/>
+    <managerType typeId="b673d306-8062-4814-a511-293d6460593f" valueTypeId="234d6a71-8a48-4e0b-8edb-41600b13fbc5"/>
+  </producedTypes>
+  <name>ДашбордНаГлавную</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дашборд на главную</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ДашбордНаГлавную.Form.Форма</defaultForm>
+  <forms uuid="e1587747-c532-4539-b149-6c591f5a5839">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
