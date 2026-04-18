@@ -63,6 +63,7 @@
   <commonModules>CommonModule.РаботаСоСпискамиИТаблицамиКлиент</commonModules>
   <functionalOptions>FunctionalOption.ПервоначальнаяЗагрузка</functionalOptions>
   <definedTypes>DefinedType.Сумма</definedTypes>
+  <definedTypes>DefinedType.Количество</definedTypes>
   <commonCommands>CommonCommand.ОткрытьНастройки</commonCommands>
   <commonCommands>CommonCommand.СоздатьОтчетОПродажам</commonCommands>
   <commonCommands>CommonCommand.СоздатьОтчетОПроизводстве</commonCommands>
@@ -116,6 +117,7 @@
   <dataProcessors>DataProcessor.ОтчетыСЦ</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаАктНРП</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаКод7ки</dataProcessors>
+  <dataProcessors>DataProcessor.ДашбордНаГлавную</dataProcessors>
   <accumulationRegisters>AccumulationRegister.РемонтыИПродукция</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.КонтрагентыИДата</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ФабрикиИСмены</accumulationRegisters>

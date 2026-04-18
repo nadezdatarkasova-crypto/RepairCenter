@@ -5,6 +5,14 @@
       <command>CommonForm.Настройки.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ДашбордНаГлавную.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Constant.СоздаватьМоделиПриЗагрузкеПродажИПроизводства.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
   </commandsVisibility>
   <commandsOrder>
     <orderFragments>

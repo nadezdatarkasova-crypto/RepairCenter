@@ -11,5 +11,6 @@
   <content>CommonCommand.ОткрытьНастройки</content>
   <content>Report.ПровекаЗаполненияКодовНоменклатуры</content>
   <content>Constant.СоздаватьМоделиПриЗагрузкеПродажИПроизводства</content>
+  <content>DataProcessor.ДашбордНаГлавную</content>
   <subsystems>ПервичнаяЗагрузка</subsystems>
 </mdclass:Subsystem>
