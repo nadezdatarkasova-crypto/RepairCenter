@@ -7,22 +7,6 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>МесяцУчета</dataPath>
-			<field>МесяцУчета</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Фирма</dataPath>
-			<field>Фирма</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидПродукции</dataPath>
-			<field>ВидПродукции</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>МоделиПродукции</dataPath>
-			<field>МоделиПродукции</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоСписано</dataPath>
 			<field>КоличествоСписано</field>
 			<title xsi:type="v8:LocalStringType">
@@ -31,6 +15,14 @@
 					<v8:content>Количество списано</v8:content>
 				</v8:item>
 			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Фирма</dataPath>
+			<field>Фирма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидПродукции</dataPath>
+			<field>ВидПродукции</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоПродано</dataPath>
@@ -42,48 +34,80 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МоделиПродукции</dataPath>
+			<field>МоделиПродукции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Год</dataPath>
+			<field>Год</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Год</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Продажи.Фирма КАК Фирма,
 	Продажи.ВидПродукции КАК ВидПродукции,
 	Продажи.МоделиПродукции КАК МоделиПродукции,
-	Продажи.МесяцУчета КАК МесяцУчета,
-	Продажи.Количество КАК КоличествоПродано,
-	АктыПродукцияИКод.Количество КАК КоличествоСписано
+	ГОД(Продажи.Период) КАК Год,
+	СУММА(Продажи.Количество) КАК КоличествоПродано
+ПОМЕСТИТЬ ВТ_Продажи
 ИЗ
 	РегистрНакопления.Продажи КАК Продажи
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.АктыПродукцияИКод КАК АктыПродукцияИКод
-		ПО Продажи.МоделиПродукции = АктыПродукцияИКод.МодельПродукции
 ГДЕ
-	Продажи.МесяцУчета МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода</query>
+	Продажи.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+СГРУППИРОВАТЬ ПО
+	Продажи.Фирма,
+	Продажи.ВидПродукции,
+	Продажи.МоделиПродукции,
+	ГОД(Продажи.Период)
+
+ИНДЕКСИРОВАТЬ ПО
+	МоделиПродукции,
+	Год
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Акты.МодельПродукции КАК МодельПродукции,
+	ГОД(Акты.Период) КАК Год,
+	СУММА(Акты.Количество) КАК КоличествоСписано
+ПОМЕСТИТЬ ВТ_Списания
+ИЗ
+	РегистрНакопления.АктыПродукцияИКод КАК Акты
+ГДЕ
+	Акты.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+СГРУППИРОВАТЬ ПО
+	Акты.МодельПродукции,
+	ГОД(Акты.Период)
+
+ИНДЕКСИРОВАТЬ ПО
+	МодельПродукции,
+	Год
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Продажи.Фирма КАК Фирма,
+	ВТ_Продажи.ВидПродукции КАК ВидПродукции,
+	ВТ_Продажи.МоделиПродукции КАК МоделиПродукции,
+	ВТ_Продажи.Год КАК Год,
+	ВТ_Продажи.КоличествоПродано КАК КоличествоПродано,
+	ВТ_Списания.КоличествоСписано КАК КоличествоСписано
+ИЗ
+	ВТ_Продажи КАК ВТ_Продажи
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Списания КАК ВТ_Списания
+		ПО ВТ_Продажи.МоделиПродукции = ВТ_Списания.МодельПродукции
+		И ВТ_Продажи.Год = ВТ_Списания.Год</query>
 	</dataSet>
-	<calculatedField>
-		<dataPath>Год</dataPath>
-		<expression>Год(МесяцУчета)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Год</v8:content>
-			</v8:item>
-		</title>
-		<appearance>
-			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>Формат</dcscor:parameter>
-				<dcscor:value xsi:type="v8:LocalStringType">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>ЧГ=0</v8:content>
-					</v8:item>
-				</dcscor:value>
-			</dcscor:item>
-		</appearance>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-	</calculatedField>
 	<calculatedField>
 		<dataPath>ПроцентСписанных</dataPath>
 		<expression/>
@@ -95,55 +119,17 @@
 		</title>
 	</calculatedField>
 	<totalField>
-		<dataPath>КоличествоПродано</dataPath>
-		<expression>Сумма(КоличествоПродано)</expression>
+		<dataPath>ПроцентСписанных</dataPath>
+		<expression>Окр(ЕСТЬNULL(Сумма(КоличествоСписано) / Сумма(КоличествоПродано) * 100, 0), 2)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>КоличествоСписано</dataPath>
 		<expression>Сумма(КоличествоСписано)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>ПроцентСписанных</dataPath>
-		<expression>Окр(ЕСТЬNULL(Сумма(КоличествоСписано) / Сумма(КоличествоПродано) * 100, 0), 2)</expression>
+		<dataPath>КоличествоПродано</dataPath>
+		<expression>Сумма(КоличествоПродано)</expression>
 	</totalField>
-	<parameter>
-		<name>НачалоПериода</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Начало периода</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>КонецПериода</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Конец периода</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
-		<availableAsField>false</availableAsField>
-	</parameter>
 	<parameter>
 		<name>ПериодОтчета</name>
 		<title xsi:type="v8:LocalStringType">
@@ -161,6 +147,44 @@
 			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 		</value>
 		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>ИтогиПоПродажам</dcsset:name>
@@ -182,7 +206,7 @@
 					<dcsset:field>МоделиПродукции</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>МесяцУчета</dcsset:field>
+					<dcsset:field>Год</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоПродано</dcsset:field>
@@ -207,18 +231,6 @@
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>НачалоПериода</dcscor:parameter>
-					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
-					<dcsset:userSettingID>3638e0f0-66ed-41ba-a1e5-55478e322adb</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>КонецПериода</dcscor:parameter>
-					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
-					<dcsset:userSettingID>74f459ac-2d2d-4a48-aecd-fdd05c397052</dcsset:userSettingID>
-				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
