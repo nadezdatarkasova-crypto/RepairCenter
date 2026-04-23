@@ -15,6 +15,17 @@
 		</right>
 	</object>
 	<object>
+		<name>SessionParameter.АдресНастроек</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Set</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.РегионыСервиса</name>
 		<right>
 			<name>Read</name>
@@ -196,13 +207,6 @@
 			<name>Use</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.Администрирование</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -676,13 +680,6 @@
 			<name>Use</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.Администрирование.Subsystem.ПервичнаяЗагрузка</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
