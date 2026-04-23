@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e702aba5-0d87-4f08-8ae1-0ea3f288cd31">
+  <name>ОтчетыПоРемонтам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты по ремонтам</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.ИтогиПоВидамПродукции</content>
+  <content>Report.ИтогиПоВидамПродукцииПоСрокуСлужбы</content>
+  <content>Report.ИтогиПоВидамЗаводскойПродукции</content>
+  <content>Report.ИтогиПоГруппамМоделей</content>
+  <content>Report.ИтогиПоГруппамМоделейПоСрокуСлужбы</content>
+  <content>Report.ИтогиПоГруппамМоделейИКодовНеисправности</content>
+  <parentSubsystem>Subsystem.ОтчетыСлужебная</parentSubsystem>
+</mdclass:Subsystem>

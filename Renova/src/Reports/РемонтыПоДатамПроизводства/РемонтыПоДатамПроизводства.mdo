@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="696cbfa5-e498-4dbe-b2eb-c900707c2193">
+  <producedTypes>
+    <objectType typeId="5e4030db-8555-4c3e-a9a7-5d4707f7e205" valueTypeId="1af6802f-0e33-41e8-974c-cfbf461b1d6e"/>
+    <managerType typeId="74185b21-87d5-463f-899b-a70cd9f1c1a7" valueTypeId="b43fe329-117a-4d77-a04c-ff8a8ebb2b04"/>
+  </producedTypes>
+  <name>РемонтыПоДатамПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонты по датам производства</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РемонтыПоДатамПроизводства.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сопоставление количества ремонтов и списаний с объемом производства с  группировкой по видам продукции</value>
+  </explanation>
+  <templates uuid="d33a22ad-a1b9-4cc6-8607-2ba7a502342e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

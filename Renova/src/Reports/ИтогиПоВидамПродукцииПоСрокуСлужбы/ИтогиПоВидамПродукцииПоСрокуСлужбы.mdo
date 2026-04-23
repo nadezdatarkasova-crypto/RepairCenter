@@ -7,10 +7,14 @@
   <name>ИтогиПоВидамПродукцииПоСрокуСлужбы</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по видам продукции по сроку службы</value>
+    <value>По видам продукции и сроку службы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИтогиПоВидамПродукцииПоСрокуСлужбы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Количество ремонтов по сроку службы до попадания в ремонт с отбором по видам продукции</value>
+  </explanation>
   <templates uuid="710f403f-a085-4f1c-92c7-49a540c6bec9">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

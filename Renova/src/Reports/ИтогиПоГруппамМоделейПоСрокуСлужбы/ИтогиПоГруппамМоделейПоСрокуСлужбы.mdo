@@ -7,10 +7,14 @@
   <name>ИтогиПоГруппамМоделейПоСрокуСлужбы</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по группам моделей по сроку службы</value>
+    <value>По группам моделей и сроку службы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИтогиПоГруппамМоделейПоСрокуСлужбы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Количество ремонтов с отбором по произвольной группе моделей (см. справочник &quot;Группы моделей&quot;) и сроку службы до попадания в ремонт</value>
+  </explanation>
   <templates uuid="eb12d1cf-70b6-4a0a-ac7b-e081bfd196a2">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

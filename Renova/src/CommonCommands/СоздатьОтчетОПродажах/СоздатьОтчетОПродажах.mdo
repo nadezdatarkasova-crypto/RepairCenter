@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0aad57ca-d568-4400-8ec1-073d8b592841">
-  <name>СоздатьОтчетОПродажам</name>
+  <name>СоздатьОтчетОПродажах</name>
   <synonym>
     <key>ru</key>
-    <value>Создать отчет о продажам</value>
+    <value>Создать отчет о продажах</value>
   </synonym>
   <group>ActionsPanelCreate</group>
   <representation>Auto</representation>

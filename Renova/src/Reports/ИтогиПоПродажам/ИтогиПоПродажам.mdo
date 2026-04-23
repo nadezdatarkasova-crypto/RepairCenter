@@ -11,6 +11,10 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИтогиПоПродажам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Сопоставления количества ремонтов с объемом продаж с группировкой по видам продукции</value>
+  </explanation>
   <templates uuid="744dd4df-4c98-49fe-8053-a135698119e4">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

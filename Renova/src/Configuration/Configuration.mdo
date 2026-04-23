@@ -42,10 +42,9 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Справочники</subsystems>
-  <subsystems>Subsystem.Документы</subsystems>
-  <subsystems>Subsystem.ПервичнаяЗагрузкаДанных</subsystems>
   <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.Отчеты</subsystems>
+  <subsystems>Subsystem.ОтчетыСлужебная</subsystems>
   <styleItems>StyleItem.ШрифтЖирный</styleItems>
   <styleItems>StyleItem.ШрифтЗаголовкаОтчетов</styleItems>
   <styleItems>StyleItem.ЦветШрифтаНазванияДиаграммы</styleItems>
@@ -65,7 +64,7 @@
   <definedTypes>DefinedType.Сумма</definedTypes>
   <definedTypes>DefinedType.Количество</definedTypes>
   <commonCommands>CommonCommand.ОткрытьНастройки</commonCommands>
-  <commonCommands>CommonCommand.СоздатьОтчетОПродажам</commonCommands>
+  <commonCommands>CommonCommand.СоздатьОтчетОПродажах</commonCommands>
   <commonCommands>CommonCommand.СоздатьОтчетОПроизводстве</commonCommands>
   <commonCommands>CommonCommand.ОткрытьСписокОтчетовОПродажах</commonCommands>
   <commonCommands>CommonCommand.ОткрытьСписокОтчетовОПроизводстве</commonCommands>
@@ -102,7 +101,7 @@
   <reports>Report.ИтогиПоГруппамМоделейИКодовНеисправности</reports>
   <reports>Report.ПровекаЗаполненияКодовНоменклатуры</reports>
   <reports>Report.ИтогиПоПродажам</reports>
-  <reports>Report.ИтогиПоПроизводству</reports>
+  <reports>Report.РемонтыПоДатамПроизводства</reports>
   <dataProcessors>DataProcessor.ЗагрузкаВидовПродукции</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаОтчетОРемонтах</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДокументаРемонт</dataProcessors>

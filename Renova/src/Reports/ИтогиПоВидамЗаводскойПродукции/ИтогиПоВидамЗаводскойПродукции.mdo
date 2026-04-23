@@ -7,10 +7,14 @@
   <name>ИтогиПоВидамЗаводскойПродукции</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по видам заводской продукции</value>
+    <value>Анализ по фабрикам и сменам</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИтогиПоВидамЗаводскойПродукции.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Количество ремонтов с группировкой по фабрикам и сменам</value>
+  </explanation>
   <templates uuid="ffa5ae6a-eae2-4ba5-bb8c-dd3b8705f45a">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

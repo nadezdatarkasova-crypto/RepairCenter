@@ -7,10 +7,14 @@
   <name>ИтогиПоГруппамМоделейИКодовНеисправности</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по группам моделей и кодам неисправности</value>
+    <value>По группам моделей и кодам неисправностей</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИтогиПоГруппамМоделейИКодовНеисправности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Количество ремонтов выбранной группы моделей (см. справочник &quot;Группы моделей&quot;) с группировкой по кодам неисправностей</value>
+  </explanation>
   <templates uuid="cf2471fe-dfeb-4bf6-8eb5-ced2ef1ec2d6">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

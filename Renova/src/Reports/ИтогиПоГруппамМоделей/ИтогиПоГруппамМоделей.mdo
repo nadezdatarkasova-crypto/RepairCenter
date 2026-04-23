@@ -7,10 +7,14 @@
   <name>ИтогиПоГруппамМоделей</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по группам моделей</value>
+    <value>По группам моделей</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ИтогиПоГруппамМоделей.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Количество ремонтов с отбором по произвольным группам моделей (см. справочник &quot;Группы моделей&quot;)</value>
+  </explanation>
   <templates uuid="51096529-246d-41a8-a52c-8206e73332be">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
